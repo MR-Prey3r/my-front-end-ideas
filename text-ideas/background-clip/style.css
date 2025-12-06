@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+h1{
+    font-size: 15rem;
+    background: url("https://media.istockphoto.com/id/946650442/vector/vector-illustration-of-pine-forest-and-mountains-vector-background-coniferous-forest-fir.jpg?s=612x612&w=0&k=20&c=4Szt1PFA02sDCelH1CZTdr9vx17rI4ahyWNEGzKcop8=");
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+
+    animation: move 10s infinite;
+}
+
+@keyframes move {
+    0%{
+        background-position: center;
+    }
+    50%{
+        background-position: right;
+    }
+    100%{
+        background-position: center;
+    }
+}
+
+h3{
+    font-size: 3rem;
+}
